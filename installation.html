@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Installation - Relicfall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>
+        <img src="logo.jpg" alt="Logo Relicfall">
+        RELICFALL
+    </h1>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#download">Télécharger</a>
+        <a href="#installation">Installation</a>
+        <a href="#desinstallation">Désinstallation</a>
+    </nav>
+</header>
+
+<main>
+
+
+
+<section id="installation">
+    <h2>Procédure d'installation</h2>
+
+    <p>
+        Cette page explique comment installer, lancer et désinstaller Relicfall sur Windows 10 et Windows 11.
+    </p>
+
+    <h3>Prérequis</h3>
+
+    <p>
+        Aucun prérequis logiciel n’est nécessaire. L’installateur embarque toutes les dépendances nécessaires :
+        Python, Pygame et les bibliothèques réseau.
+    </p>
+
+    <ul>
+        <li>Système d’exploitation : Windows 10 ou Windows 11, 64 bits</li>
+        <li>Processeur : Intel Core i3 ou équivalent</li>
+        <li>Mémoire vive : 2 Go de RAM</li>
+        <li>Espace disque : 200 Mo libres</li>
+        <li>Résolution minimale : 1280 × 720</li>
+        <li>Connexion réseau locale (LAN) pour le multijoueur</li>
+    </ul>
+
+    <h3>Installation</h3>
+
+    <div class="tutorial-step">
+        <h4>Étape 1 — Télécharger l’installateur</h4>
+        <p>
+            Rendez-vous sur le site du projet, choisissez la version souhaitée, puis cliquez sur le bouton
+            de téléchargement pour récupérer le fichier <strong>RelicfallSetup.exe</strong>.
+        </p>
+        <img src="install-step1.png" alt="Téléchargement de Relicfall depuis le site">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 2 — Lancer l’installateur</h4>
+        <p>
+            Ouvrez le dossier contenant <strong>RelicfallSetup.exe</strong>, puis double-cliquez sur le fichier
+            pour démarrer l’installation.
+        </p>
+        <img src="install-step2.png" alt="Fichier RelicfallSetup.exe dans le dossier de téléchargement">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 3 — Autoriser l’installation</h4>
+        <p>
+            Si Windows affiche une fenêtre de contrôle de compte utilisateur, cliquez sur <strong>Oui</strong>
+            pour autoriser l’installation.
+        </p>
+        <img src="install-step3.png" alt="Fenêtre Windows demandant l'autorisation d'installation">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 4 — Choisir le dossier d’installation</h4>
+        <p>
+            L’assistant propose un dossier d’installation par défaut. Vous pouvez le conserver ou le modifier
+            avec le bouton <strong>Browse</strong>. Cliquez ensuite sur <strong>Next</strong>.
+        </p>
+        <img src="install-step4.png" alt="Choix du dossier d'installation">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 5 — Choisir le dossier du Menu Démarrer</h4>
+        <p>
+            Le raccourci sera placé dans le dossier Relicfall du Menu Démarrer. Laissez la valeur par défaut,
+            puis cliquez sur <strong>Next</strong>.
+        </p>
+        <img src="install-step5.png" alt="Choix du dossier du menu démarrer">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 6 — Lancer l’installation</h4>
+        <p>
+            L’assistant affiche un récapitulatif de l’installation. Cliquez sur <strong>Install</strong>
+            pour commencer.
+        </p>
+        <img src="install-step6.png" alt="Récapitulatif avant installation">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 7 — Terminer l’installation</h4>
+        <p>
+            Une fois l’installation terminée, vous pouvez cocher <strong>Lancer Relicfall</strong> pour démarrer
+            le jeu immédiatement, puis cliquer sur <strong>Finish</strong>.
+        </p>
+        <img src="install-step7.png" alt="Fin de l'installation de Relicfall">
+    </div>
+
+    <h3>Résultat de l’installation</h3>
+
+    <p>
+        Après l’installation, les éléments suivants sont créés sur votre système :
+    </p>   
+    
+    <p>
+        &mdash; C:\Program Files\Relicfall\Relicfall.exe– exécutable principal du jeu
+    </p>
+
+    <p>
+        &mdash; C:\Program Files\Relicfall\unins000.exe– programme de désinstallation
+    </p>
+
+    <p>
+        &mdash; Raccourci dans le Menu Démarrer → dossier Relicfall
+    </p>
+
+    <p>
+        &mdash; Raccourci sur le Bureau
+    </p>
+
+    <p>
+        &mdash; Entrée dans Ajout/Suppression de programmes de Windows
+    </p>
+
+    <p>
+        Les paramètres et sauvegardes utilisateur sont stockés séparément dans le dossier :
+        <strong>%APPDATA%\Relicfall</strong>. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ex. : C:\Users\VotreNom\AppData\Roaming\Relicfall)
+    </p>
+</section>
+
+<section id="lancement">
+    <h2>Lancement du jeu</h2>
+
+    <h3>Mode solo ou hôte multijoueur</h3>
+
+    <p>
+        Double-cliquez sur l’icône Relicfall depuis le Bureau ou le Menu Démarrer. Depuis le menu principal,
+        choisissez <strong>Jouer en local</strong> pour une partie solo ou <strong>Créer une partie</strong>
+        pour héberger une session multijoueur sur le réseau local.
+    </p>
+
+    <h3>Mode client multijoueur</h3>
+
+    <ol>
+        <li>Vérifiez que l’hôte a déjà lancé une partie.</li>
+        <li>Assurez-vous que les deux machines sont connectées au même réseau local.</li>
+        <li>Lancez Relicfall sur votre machine.</li>
+        <li>Choisissez <strong>Rejoindre une partie</strong>.</li>
+        <li>Le jeu détecte automatiquement le serveur sur le réseau local.</li>
+    </ol>
+</section>
+
+<section id="desinstallation">
+    <h2>Désinstallation</h2>
+
+    <div class="tutorial-step">
+        <h4>Étape 1 — Ouvrir les paramètres</h4>
+        <p>
+            Ouvrez la recherche Windows, tapez <strong>paramètres</strong>, puis cliquez sur
+            <strong>Ouvrir</strong>.
+        </p>
+        <img src="uninstall-step1.png" alt="Ouverture des paramètres Windows">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 2 — Applications</h4>
+        <p>
+            Dans le menu de gauche, cliquez sur <strong>Applications</strong>.
+        </p>
+        <img class="small-image" src="uninstall-step2.png" alt="Menu Applications dans les paramètres Windows">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 3 — Applications installées</h4>
+        <p>
+            Cliquez sur <strong>Applications installées</strong>.
+        </p>
+        <img src="uninstall-step3.png" alt="Section Applications installées">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 4 — Rechercher Relicfall</h4>
+        <p>
+            Dans la barre de recherche, tapez <strong>Relicfall</strong>. L’application apparaît dans la liste.
+        </p>
+        <img src="uninstall-step4.png" alt="Recherche de Relicfall dans les applications installées">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 5 — Désinstaller</h4>
+        <p>
+            Cliquez sur les trois points à droite de l’entrée Relicfall, puis cliquez sur
+            <strong>Désinstaller</strong>.
+        </p>
+        <img src="uninstall-step5.png" alt="Bouton de désinstallation de Relicfall">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 6 — Confirmer</h4>
+        <p>
+            Une fenêtre de confirmation apparaît. Cliquez sur <strong>Désinstaller</strong>.
+        </p>
+        <img src="uninstall-step6.png" alt="Confirmation de désinstallation Windows">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 7 — Autoriser</h4>
+        <p>
+            Si Windows demande une autorisation, cliquez sur <strong>Oui</strong>.
+        </p>
+        <img src="uninstall-step7.png" alt="Autorisation Windows pour la désinstallation">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 8 — Confirmer la suppression</h4>
+        <p>
+            Une boîte de dialogue demande confirmation de la suppression complète. Cliquez sur
+            <strong>Oui</strong>.
+        </p>
+        <img src="uninstall-step8.png" alt="Confirmation de suppression complète">
+    </div>
+
+    <div class="tutorial-step">
+        <h4>Étape 9 — Sauvegardes et paramètres</h4>
+        <p>
+            Une seconde fenêtre demande si vous souhaitez supprimer les sauvegardes et paramètres.
+            Cliquez sur <strong>Oui</strong> pour tout supprimer ou sur <strong>Non</strong> pour conserver vos données.
+        </p>
+        <img src="uninstall-step9.png" alt="Suppression des sauvegardes et paramètres">
+    </div>
+
+    
+</section>
+
+<section id="pdf-installation">
+
+    <div class="pdf-download">
+
+        <h2>Télécharger le document PDF</h2>
+
+        <p>
+            Vous pouvez également télécharger la procédure complète d'installation et de désinstallation au format PDF.
+        </p>
+
+        <a 
+            class="download-btn"
+            href="Procédure d'installation & désinstallation.pdf"
+            download>
+
+            Télécharger le PDF
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Relicfall</p>
+</footer>
+
+</body>
+</html>

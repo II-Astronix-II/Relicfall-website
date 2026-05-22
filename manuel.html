@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Manuel d'utilisation - Relicfall</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <img src="logo.jpg" alt="Logo Relicfall">
+        RELICFALL
+    </h1>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+
+        <div class="dropdown">
+            <a href="#">Sections ▼</a>
+
+            <div class="dropdown-content">
+                <a href="#presentation">Présentation</a>
+                <a href="#premier-lancement">Premier lancement</a>
+                <a href="#menu-principal">Menu principal</a>
+                <a href="#menu-jouer">Menu Jouer</a>
+                <a href="#multijoueur">Multijoueur</a>
+                <a href="#commandes">Commandes</a>
+                <a href="#progression">Déroulement</a>
+                <a href="#competences">Compétences</a>
+                <a href="#pause">Menu Pause</a>
+                <a href="#options-configuration">Options</a>
+                <a href="#sauvegarde">Sauvegarde</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
+<section id="presentation">
+
+    <h2>Manuel d'utilisation</h2>
+
+    <p>
+        Relicfall est un jeu d’action-aventure en vue de dessus développé avec Python et PyGame.
+        Le joueur incarne un aventurier chargé de récupérer des reliques perdues dans des donjons
+        remplis de monstres afin de rétablir l’équilibre du monde.
+    </p>
+
+    <p>
+        Le jeu propose une expérience solo ainsi qu’un mode multijoueur coopératif en réseau local (LAN).
+    </p>
+
+    <h3>Points clés du jeu</h3>
+
+    <ul>
+        <li>Trois niveaux de donjon avec des salles et des monstres à vaincre</li>
+        <li>Unlobby entre chaque niveau permettant d’améliorer ses compétences</li>
+        <li>Unmarchand dans le lobby permettant d’acheter des améliorations</li>
+        <li>Trois branches de compétences : Attaque, Soin et Mouvement</li>
+        <li>Mode multijoueur coopératif jusqu’à 4 joueurs sur réseau local</li>
+    </ul>
+
+</section>
+
+<section id="premier-lancement">
+
+    <h2>Premier lancement</h2>
+
+    <p>
+        Double-cliquez sur l’icône Relicfall sur le bureau ou recherchez-la dans le menu Démarrer.
+    </p>
+
+    <p>
+        Le jeu démarre dans une fenêtre fixe de résolution 1280 × 720.
+    </p>
+
+    <div class="info-box">
+        <strong>Remarque :</strong> le jeu ne peut pas être mis en plein écran depuis l’interface.
+        Évitez de redimensionner manuellement la fenêtre.
+    </div>
+
+</section>
+
+<section id="menu-principal">
+
+    <h2>Menu principal</h2>
+
+    <p>
+        Le menu principal contient quatre boutons :
+    </p>
+
+    <ul>
+        <li><strong>Jouer</strong> : accéder au menu de sélection de partie</li>
+        <li><strong>Options</strong> :  ouvrelemenudeconfiguration des touches</li>
+        <li><strong>Crédits</strong> : afficher les crédits du projet</li>
+        <li><strong>Quitter</strong> : fermer le jeu</li>
+    </ul>
+
+</section>
+
+<section id="menu-jouer">
+
+    <h2>Menu Jouer</h2>
+
+    <p>
+        Après avoir cliqué sur Jouer, trois possibilités sont disponibles :
+    </p>
+
+    <ul>
+        <li><strong>Créer un monde</strong> : créer une nouvelle partie</li>
+        <li><strong>Charger un monde</strong> : reprendre une sauvegarde</li>
+        <li><strong>Rejoindre une partie</strong> : rejoindre un autre joueur en réseau local</li>
+    </ul>
+
+    <h3>Créer un monde</h3>
+
+    <ol>
+        <li>Saisissez le nom de votre monde dans le champ de texte central</li>
+        <li>Le nom doit contenir entre 1 et 13 caractères</li>
+        <li>Lenom ne doit pas déjà exister</li>
+        <li>Seules les lettres (a-z, A-Z), chiffres(0-9), tirets (-) et underscores (_) sont autorisés</li>
+        <li>Cliquer sur <strong>Créer</strong></li>
+    </ol>
+
+    <div class="info-box">
+        Vous pouvez posséder jusqu’à 4 mondes sauvegardés simultanément.
+    </div>
+
+    <h3>Charger un monde</h3>
+
+    <p>
+        Sélectionnez une sauvegarde dans la liste puis cliquez sur Charger.
+    </p>
+
+    <p>
+        Une sauvegarde peut être supprimée via l’icône corbeille.
+    </p>
+
+    <div class="warning-box">
+        La suppression d’une sauvegarde est définitive.
+    </div>
+
+</section>
+
+<section id="multijoueur">
+
+    <h2>Mode multijoueur</h2>
+
+    <p>
+        Le mode multijoueur fonctionne en réseau local (LAN ou Wi-Fi partagé).
+    </p>
+
+    <h3>Créer une partie</h3>
+
+    <p>
+        L’hôte doit créer ou charger un monde avant que les autres joueurs puissent rejoindre.
+    </p>
+
+    <h3>Rejoindre une partie</h3>
+
+    <ul>
+        <li>Mode Auto : recherche automatique de l’hôte</li>
+        <li>Mode Ip : saisie de l’adresse IP de l’hôte</li>
+    </ul>
+
+    <p>
+        Si le mode automatique ne fonctionne pas, ouvrez une invite de commande avec
+        <strong>Win + R</strong>, tapez <strong>cmd</strong>, puis écrivez :
+    </p>
+
+    <div class="code-box">
+        ipconfig
+    </div>
+
+    <p>
+        Recherchez ensuite votre IP sur la ligne Adresse IPv4.
+    </p>
+
+    <div class="info-box">
+        Tous les joueurs doivent être connectés au même réseau local.
+    </div>
+
+</section>
+
+<section id="commandes">
+
+    <h2>Commandes du jeu</h2>
+
+    <p>
+        Les commandes par défaut sont les suivantes. Elles peuvent être modifiées dans le menu Options.
+    </p>
+
+    <table class="controls-table">
+
+        <tr>
+            <th>Touche</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>Z</td>
+            <td>Déplacement vers le haut</td>
+        </tr>
+
+        <tr>
+            <td>S</td>
+            <td>Déplacement vers le bas</td>
+        </tr>
+
+        <tr>
+            <td>Q</td>
+            <td>Déplacement vers la gauche</td>
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td>Déplacement vers la droite</td>
+        </tr>
+
+        <tr>
+            <td>Espace</td>
+            <td>Attaquer</td>
+        </tr>
+
+        <tr>
+            <td>E</td>
+            <td>Interagir</td>
+        </tr>
+
+        <tr>
+            <td>Échap</td>
+            <td>Menu pause</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section id="progression">
+
+    <h2>Déroulement d'une partie</h2>
+
+    <p>
+        Une partie Relicfall se compose de trois niveaux reliés par des lobbys.
+    </p>
+
+    <ul>
+        <li>Niveau 1 : premier donjon. Objectif : pénétrer dans le donjon afin de rejoindre le lobby pour accéder aux autres salles</li>
+        <li>Lobby 1 : zone de repos après le niveau 1. Le marchand y est présent</li>
+        <li>Niveau 2 : deuxième donjon, accessible depuis le lobby. Vous devez récupérer la première relique</li>
+        <li>Lobby 2 : zone de repos après le niveau 2. Le marchand y est présent</li>
+        <li>Niveau 3 : troisième et dernier donjon. Vous devez récupérer la dernière relique</li>
+        <li>Lobby 3 : fin du jeu</li>
+    </ul>
+
+    <h3>Exploration d'un niveau</h3>
+
+    <p>
+        Le niveau est composé de salles reliées entre elles par des portes. Les portes s’ouvrent en
+éliminant tous les ennemis présents dans la salle ou en activant des leviers / bouttons.
+    </p>
+    
+    <p>
+        Desennemis patrouillent et réagissent à votre présence. Ils vous attaquent lorsque vous entrez
+dans leur champ de vision ou leur zone de détection.
+    </p>
+
+    <p>
+        En mode multijoueur, certaines salles nécéssitent que tous les joueurs soient présent dans la
+même salle pour progresser vers la salle suivante.
+    </p>
+        
+    <p>
+        À la fin d'un niveau, une relique vous attend. Interagissez avec elle pour la récupérer et déclencher
+le retour vers le lobby.
+    </p>
+
+    <h3>Le lobby</h3>
+
+    <p>
+        Le marchand, indiqué par le message Appuie sur E pour parler lorsque vous en êtes proche.
+    </p>
+
+    <p>
+        Des portes donnant accès au niveau suivant (elles se déverrouillent au fil de l’avancement).
+    </p>
+
+    <div class="info-box">
+        Lors de votre première arrivée dans le lobby, le marchand vous adresse automatiquement la parole.
+        Appuyez sur la touche entrer pour avancer dans le dialogue, ou attendez qu’il défile seul.
+    </div>
+
+    <h3>Combat</h3>
+
+    <p>
+        Appuyez sur Espace pour attaquer dans la direction de la souris.
+    </p>
+
+    <p>
+        Vos points de vie sont affichés en haut de l’écran. Si vos points de vie tombent à zéro, vous
+        perdez et retournez au lobby précédent.
+    </p>
+
+    <p>
+        En mode multijoueur, la mort d’un joueur vous fait retourner au lobby précédent.
+    </p>
+
+</section>
+
+<section id="competences">
+
+    <h2>Marchand et arbre de compétences</h2>
+
+    <p>
+        approchez-vous du personnage du marchand et appuyez sur E d’amélioration des compétences
+    </p>
+
+    <h3>Branches disponibles</h3>
+
+    <ul>
+        <li><strong>ATTACK</strong> en rouge : +10% de dégâts infligés par niveau (5 niveaux max)</li>
+        <li><strong>HEAL</strong> en vert : +10% de points de vie max par niveau (5 niveaux max)</li>
+        <li><strong>MOUVEMENT</strong> en bleu : +10% de vitesse de déplacement par niveau (5 niveaux max)</li>
+    </ul>
+
+    <p>
+        Chaque niveau de compétence a un coût en points affiché sous le bouton correspondant. Le
+    coût augmente à chaque niveau débloqué (coût = 2<sup>1+niveau actuel</sup>).
+    </p>
+
+    <p>
+        Cliquez sur le bouton du prochain niveau à débloquer pour l’acheter (le bouton suivant votre
+    niveau actuel est le seul actif).
+    </p>
+
+    <p>
+        Si vous n’avez pas assez de points, le bouton n’est pas cliquable.
+    </p>
+
+    <p>
+        Appuyez sur Échap pourfermerle menu et sauvegarder les améliorations achetées.
+    </p>
+
+</section>
+
+<section id="pause">
+
+    <h2>Menu Pause</h2>
+
+    <p>
+        Pendant une partie, appuyez sur Échap pour ouvrir le menu pause. Quatre options sont disponibles :
+    </p>
+
+    <ul>
+        <li>Reprendre</li>
+        <li>Options</li>
+        <li>Menu principal</li>
+        <li>Quitter</li>
+    </ul>
+
+    <p>
+        Appuyez à nouveau sur Échap pourreprendre la partie sans cliquer sur un bouton.
+    </p>
+
+</section>
+
+<section id="options-configuration">
+
+    <h2>Options et configuration des touches</h2>
+
+    <p>
+        Le menu Options est accessible depuis le menu principal ou depuis le menu Pause.
+    </p>
+
+    <ul>
+        <li>Les actions configurables sont listées avec la touche actuellement associée à chacune</li>
+        <li>Cliquez sur l’action que vous souhaitez modifier. Le texte passe à Appuyez sur une touche</li>
+        <li>Appuyez sur la nouvelle touche souhaitée pour l’associer à cette action</li>
+        <li>Cliquez sur Sauvegarder pourenregistrer les modifications, ou sur Retour pour les annuler</li>
+    </ul>
+
+    <div class="info-box">
+        Si vos touches sont mal configurées et que vous ne parvenez plus à naviguer dans les menus, vous pouvez supprimer manuellement le fichier de configuration settings.json situé dans
+        %APPDATA%\Relicfall. Les touches par défaut seront restaurées au prochain lancement.
+    </div>
+
+</section>
+
+<section id="sauvegarde">
+
+    <h2>Sauvegarde et progression</h2>
+
+    <p>
+        Le jeu sauvegarde automatiquement la progression à la fin de chaque niveau.  (retour dans le lobby).
+    </p>
+
+    <p>
+        Les sauvegardes sont stockées dans :
+    </p>
+
+    <div class="code-box">
+        %APPDATA%\Relicfall\worlds\&lt;nom_du_monde&gt;
+    </div>
+
+    <div class="info-box">
+        Vous pouvez posséder jusqu’à 4 mondes sauvegardés simultanément.
+    </div>
+
+    <div class="warning-box">
+         Il n’existe pas de sauvegarde manuelle; si vous quittez en plein milieu d’un niveau, vous reprendrez à l’entrée de ce niveau lors du prochain chargement.
+    </div>
+
+</section>
+
+<section id="multijoueur-resume">
+
+    <h2>Mode multijoueur Résumé</h2>
+
+    <p>
+        Hôte (serveur) : Lancer Relicfall, Jouer, Créer ou Charger un monde. Le jeu démarre et attend les connexions des autres joueurs.
+    </p>
+
+    <p>
+        Client (joueur) : Lancer Relicfall, Jouer, Rejoindre . Le jeu détecte automatiquement la session sur le réseau local et vous connecte. Sinon vous avez la possibilité de rentrer l’ip de l’hôte.
+    </p>
+
+</section>
+
+<section id="pdf-manual">
+
+    <div class="pdf-download">
+
+        <h2>Télécharger le manuel PDF</h2>
+
+        <p>
+            Vous pouvez également télécharger le manuel d’utilisation complet au format PDF.
+        </p>
+
+        <a
+            class="download-btn"
+            href="Manuel d'utilisation.pdf"
+            download>
+
+            Télécharger le PDF
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Relicfall</p>
+</footer>
+
+</body>
+</html>
