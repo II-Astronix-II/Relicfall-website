@@ -1,6 +1,6 @@
 function downloadLatest() {
 
-    const latestVersion = "Relicfall-main.zip";
+    const latestVersion = "RelicfallSetup.exe";
 
     alert("Téléchargement de la dernière version (1.0)");
 
