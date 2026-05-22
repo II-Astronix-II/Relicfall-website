@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Relicfall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Relicfall</h1>
+    <h1>
+        <img src="logo.jpg" alt="logo">
+        RELICFALL
+    </h1>
     <nav>
         <a href="#presentation">Présentation</a>
         <a href="#images">Images</a> 
@@ -21,6 +25,10 @@
     <h2>Découvrez notre jeu</h2>
     <p>Un jeu incroyable vous attend</p>
     <a class="download-btn" onclick="downloadLatest()">Télécharger le jeu</a>
+
+    <p class="compatibility">
+        ✔ Compatible Windows 10 et 11 • 64 bits
+    </p>
 </section>
 
 <section id="presentation">
@@ -35,9 +43,24 @@
 <section id="images">
     <h2>Images du jeu</h2>
 
-    <div class="gallery">
-        <img src="image1.png" alt="image du jeu">
-        <img src="image2.png" alt="image du jeu">
+    <div class="gallery-container">
+
+        <button class="scroll-btn left" onclick="scrollGallery(-1)">
+            ◀
+        </button>
+
+        <div class="gallery" id="gallery">
+
+            <img src="image1.png" alt="image du jeu">
+            <img src="image2.png" alt="image du jeu">
+            <img src="image3.png" alt="image du jeu">
+
+        </div>
+
+        <button class="scroll-btn right" onclick="scrollGallery(1)">
+            ▶
+        </button>
+
     </div>
 
 </section>

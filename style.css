@@ -1,3 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.download-btn:hover,
+button:hover {
+    background: #00e05d;
+
+    transform: scale(1.05);
+
+    transition: 0.2s;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,19 +25,90 @@ body {
 
 header {
     background: rgba(31, 31, 31, 0.98);
-    padding: 15px;
+
+    height: 120px;
+
+    padding: 0 15px;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
+    display: flex;
+    align-items: center;
+
     margin-left: 50px;
+
+    position: relative;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+
+    margin-left: 50px;
+
+    font-family: 'Pixelify Sans', sans-serif;
+
+    font-size: 42px;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+    text-shadow: 0 0 10px rgba(0, 200, 83, 0.35);
+}
+
+header h1 img {
+    height: 110px;
+
+    width: auto;
+
+    margin-right: 10px;
+
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+header h1 img {
+    transition: 0.3s;
+}
+
+header h1 img:hover {
+    transform: scale(1.05);
 }
 
 nav a {
     color: white;
-    margin-left: 15px;
+
+    margin-left: 25px;
+
     text-decoration: none;
+
+    font-size: 20px;
+
+    font-family: 'Orbitron', sans-serif;
+
+    letter-spacing: 1px;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+nav a {
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #00c853;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    transform: scale(1.05);
 }
 
 .hero {
@@ -40,6 +124,7 @@ nav a {
     border-radius: 5px;
 }
 
+
 section {
     padding: 40px;
     background: rgba(48, 48, 48, 0.35);
@@ -47,16 +132,67 @@ section {
     border-radius: 10px;
 }
 
+.gallery-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .gallery {
     display: flex;
     gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    width: 100%;
+    padding: 10px;
+
+    scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
 }
 
 .gallery img {
-    width: 50%;
+    min-width: 45%;
     height: 300px;
+
     object-fit: cover;
+
     border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+.gallery img {
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+.scroll-btn {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    border: none;
+
+    font-size: 24px;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    z-index: 10;
+}
+
+.scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
 }
 
 select {

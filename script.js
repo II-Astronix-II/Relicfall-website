@@ -12,3 +12,15 @@ function downloadGame() {
     alert("Téléchargement de " + select.options[select.selectedIndex].text);
     window.location.href = file;
 }
+
+function scrollGallery(direction) {
+
+    const gallery = document.getElementById("gallery");
+
+    const scrollAmount = 500;
+
+    gallery.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+}
