@@ -71,13 +71,22 @@ function goToHome() {
 }
 
 function toggleLanguage() {
-    const currentPage = window.location.pathname.split("/").pop();
+    let currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "") {
+        currentPage = "index.html";
+    }
 
     if (currentPage.includes("-en")) {
         localStorage.setItem("language", "fr");
         window.location.href = currentPage.replace("-en.html", ".html");
     } else {
         localStorage.setItem("language", "en");
-        window.location.href = currentPage.replace(".html", "-en.html");
+
+        if (currentPage === "index.html") {
+            window.location.href = "index-en.html";
+        } else {
+            window.location.href = currentPage.replace(".html", "-en.html");
+        }
     }
 }
