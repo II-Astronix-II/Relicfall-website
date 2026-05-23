@@ -26,18 +26,20 @@
 
             <div class="dropdown-content">
 
-                <a href="installation.html">
-                    Procédure d'installation
-                </a>
-
-                <a href="manuel.html">
-                    Manuel d'utilisation
-                </a>
+                <a href="#" onclick="goToPage('manuel')">Manuel d'utilisation</a>
+                <a href="#" onclick="goToPage('installation')">Procédure d'installation</a>
 
             </div>
 
         </div>
+
+        <div class="language-switch">
+            <span onclick="toggleLanguage()" title="Switch to English">
+                🇺🇸
+            </span>
+        </div>
     </nav>
+
 </header>
 
 <section class="hero">
@@ -55,7 +57,7 @@
 <section id="presentation">
     <h2>Présentation</h2>
     <p>
-        Notre histoire prend place dans un village lointain, reconnu pour la paix, la joie et la cohésion qui y règnent. Ce village fut jadis protégé par de puissantes reliques capables de repousser toute attaque de monstres.
+        Notre histoire prend place dans un village lointain, reconnu pour la paix, la joie et la cohésion qui y règne. Ce village fut jadis protégé par de puissantes reliques capables de repousser toute attaque de monstres.
         Hélas, un jour, il connut le pire des sorts : la disparition des reliques. Celle-ci entraîna la chute du village, sombrant par la suite sous les assauts incessants des créatures, mettant brutalement fin à une ère de paix.
 
         <br><br>
@@ -66,6 +68,48 @@
 
         Jusqu’à votre apparition dans cette contrée lointaine.
     </p>
+</section>
+
+<section id="project">
+
+    <h2>Présentation du projet</h2>
+
+    <p>
+        Relicfall est un jeu vidéo d’action-aventure en 2D avec une vue de dessus, inspiré des dungeon crawlers 
+        et de jeux d’exploration comme Zelda. Développé en Python avec la bibliothèque PyGame, le projet a été pensé 
+        comme une expérience coopérative complète mêlant exploration, combats, progression du personnage, énigmes 
+        et multijoueur dans un univers médiéval-fantastique sombre. Dès le début du développement, l’objectif n’était 
+        pas seulement de créer un jeu techniquement fonctionnel, mais aussi de construire un univers cohérent et immersif 
+        capable de proposer une véritable aventure structurée. Le joueur évolue à travers plusieurs donjons reliés entre eux, 
+        remplis de monstres, de mécaniques interactives, d’énigmes, de marchands et de reliques à récupérer afin de restaurer 
+        l’équilibre du monde.
+    </p>
+
+    <p>
+        Tout au long du développement, le projet est progressivement passé d’un prototype technique à une expérience 
+        de jeu beaucoup plus complète et aboutie. Les premières étapes se sont principalement concentrées sur les bases 
+        essentielles du jeu : les déplacements du joueur, le chargement des donjons, les collisions, les transitions entre 
+        les salles, les menus ainsi que l’architecture générale du moteur. Une fois ces fondations stabilisées, l’équipe a pu 
+        enrichir le gameplay avec de nombreuses fonctionnalités supplémentaires comme l’intelligence artificielle des ennemis, 
+        les mécaniques de combat, le système de compétences, les effets de lumière, les marchands, la synchronisation multijoueur 
+        ainsi qu’un level design plus complexe. Une attention particulière a également été portée à l’ambiance du jeu grâce aux 
+        graphismes en pixel art, à la conception des niveaux, à l’intégration sonore, à l’ergonomie des interfaces et au rythme 
+        de progression du joueur. Chaque donjon possède ainsi sa propre identité visuelle, ses mécaniques et ses énigmes afin de 
+        proposer une aventure variée et évolutive.
+    </p>
+
+    <p>
+        Relicfall représente également une expérience humaine et collaborative importante pour l’ensemble du groupe. 
+        Au-delà des aspects purement techniques liés à la programmation, le projet a demandé une organisation constante, 
+        une forte capacité d’adaptation et un véritable travail d’équipe afin de mener à bien un développement ambitieux 
+        en parallèle des autres contraintes scolaires. Le projet a mobilisé de nombreux domaines : programmation gameplay, 
+        intelligence artificielle, level design, réseau multijoueur, création graphique, interfaces utilisateur, recherche sonore 
+        et conception du site web de présentation. Malgré certaines limitations de temps et plusieurs fonctionnalités ambitieuses 
+        qui n’ont pas pu être entièrement finalisées, l’équipe est parvenue à produire un jeu cohérent, jouable et fidèle à la 
+        vision imaginée au départ. Relicfall constitue ainsi à la fois un projet vidéoludique complet et une démonstration concrète 
+        des compétences techniques, créatives et organisationnelles acquises tout au long du développement.
+    </p>
+
 </section>
 
 <section id="images">
@@ -93,6 +137,83 @@
 
 </section>
 
+<section id="team">
+
+    <h2>Équipe du projet</h2>
+
+    <p>
+        Relicfall a été réalisé par une équipe de cinq étudiants dans le cadre du projet EPITA.
+        Chaque membre a contribué au développement du jeu à travers des domaines spécifiques
+        tels que le gameplay, le multijoueur, le level design, les interfaces, les assets visuels
+        et l’ambiance sonore.
+    </p>
+
+    <div class="team-container">
+
+        <div class="team-member">
+
+            <h3>Eliott Averty</h3>
+
+            <p>
+                Développement de l’architecture technique du jeu, du moteur du donjon,
+                du système multijoueur LAN, des sauvegardes, des compétences,
+                des effets de lumière et d’une partie importante de l’interface utilisateur.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Rémi Jussac</h3>
+
+            <p>
+                Développement du gameplay principal : joueur, combats, animations,
+                collisions, ennemis, intelligence artificielle, progression,
+                marchand et développement du site web.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Augustin Sourisseau</h3>
+
+            <p>
+                Conception des niveaux, des lobbys et des mécaniques de progression,
+                création d’assets visuels, sprites joueurs, éléments de décor
+                et structuration des environnements du jeu.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Alexis Chapier</h3>
+
+            <p>
+                Création des menus, configuration des contrôles,
+                recherche et intégration des musiques et effets sonores,
+                ainsi que plusieurs assets graphiques du joueur.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Odile-Anaelle Metsotsanga</h3>
+
+            <p>
+                Recherche et réflexion autour des monstres du jeu,
+                participation à la construction du bestiaire
+                et à la cohérence de l’univers de Relicfall.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
 <section id="download">
     <h2>Télécharger</h2>
     <p>Choisissez une version :</p>
@@ -104,6 +225,94 @@
     <br><br>
 
     <button onclick="downloadGame()">Télécharger</button>
+
+</section>
+
+<section id="resources">
+
+    <h2>Ressources utilisées</h2>
+
+    <ul class="resources-list">
+
+        <li>
+            <a href="https://www.python.org/" target="_blank">
+                Python
+            </a>
+            — Langage principal utilisé pour le développement du projet.
+        </li>
+
+        <li>
+            <a href="https://www.pygame.org/" target="_blank">
+                Pygame
+            </a>
+            — Bibliothèque utilisée pour le moteur du jeu, l’affichage et les interactions.
+        </li>
+
+        <li>
+            <a href="https://github.com/" target="_blank">
+                GitHub
+            </a>
+            — Gestion de version, collaboration et hébergement du site web.
+        </li>
+
+        <li>
+            <a href="https://code.visualstudio.com/" target="_blank">
+                Visual Studio Code
+            </a>
+            — Environnement de développement utilisé pendant le projet.
+        </li>
+
+        <li>
+            <a href="https://www.aseprite.org/" target="_blank">
+                Aseprite
+            </a>
+            — Création et édition des sprites et assets pixel-art.
+        </li>
+
+        <li>
+            <a href="https://freesound.org/" target="_blank">
+                Freesound
+            </a>
+            — Recherche d’effets sonores et d’ambiances audio.
+        </li>
+
+        <li>
+            <a href="https://opengameart.org/" target="_blank">
+                OpenGameArt
+            </a>
+            — Ressources graphiques et inspirations visuelles.
+        </li>
+
+        <li>
+            <a href="https://fonts.google.com/specimen/Pixelify+Sans" target="_blank">
+                Pixelify Sans
+            </a>
+            — Police utilisée pour l’interface du site web.
+        </li>
+
+    </ul>
+
+</section>
+
+<section id="reports">
+
+    <h2>Rapport du projet</h2>
+
+    <div class="pdf-download">
+
+        <p>
+            Télécharger le rapport complet du projet et de soutenance.
+        </p>
+
+        <a class="download-btn"
+           href="rapport-projet.pdf"
+           download>
+
+            Télécharger le rapport PDF
+
+        </a>
+
+    </div>
 
 </section>
 

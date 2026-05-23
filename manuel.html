@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
@@ -21,7 +22,7 @@
     </h1>
 
     <nav>
-        <a href="index.html">Accueil</a>
+        <a href="#" onclick="goToHome()">Accueil</a>
 
         <div class="dropdown">
             <a href="#">Sections ▼</a>
@@ -51,7 +52,7 @@
     <h2>Manuel d'utilisation</h2>
 
     <p>
-        Relicfall est un jeu d’action-aventure en vue de dessus développé avec Python et PyGame.
+        Relicfall est un jeu d’action-aventure en vue de dessus développé avec Python et Pygame.
         Le joueur incarne un aventurier chargé de récupérer des reliques perdues dans des donjons
         remplis de monstres afin de rétablir l’équilibre du monde.
     </p>
@@ -64,8 +65,8 @@
 
     <ul>
         <li>Trois niveaux de donjon avec des salles et des monstres à vaincre</li>
-        <li>Unlobby entre chaque niveau permettant d’améliorer ses compétences</li>
-        <li>Unmarchand dans le lobby permettant d’acheter des améliorations</li>
+        <li>Un lobby entre chaque niveau permettant d’améliorer ses compétences</li>
+        <li>Un marchand dans le lobby permettant d’acheter des améliorations</li>
         <li>Trois branches de compétences : Attaque, Soin et Mouvement</li>
         <li>Mode multijoueur coopératif jusqu’à 4 joueurs sur réseau local</li>
     </ul>
@@ -101,8 +102,8 @@
 
     <ul>
         <li><strong>Jouer</strong> : accéder au menu de sélection de partie</li>
-        <li><strong>Options</strong> :  ouvrelemenudeconfiguration des touches</li>
-        <li><strong>Crédits</strong> : afficher les crédits du projet</li>
+        <li><strong>Options</strong> : ouvre le menu de configuration des touches</li>
+        <li><strong>Crédits</strong> : afficher les crédits du jeu</li>
         <li><strong>Quitter</strong> : fermer le jeu</li>
     </ul>
 
@@ -127,9 +128,9 @@
     <ol>
         <li>Saisissez le nom de votre monde dans le champ de texte central</li>
         <li>Le nom doit contenir entre 1 et 13 caractères</li>
-        <li>Lenom ne doit pas déjà exister</li>
-        <li>Seules les lettres (a-z, A-Z), chiffres(0-9), tirets (-) et underscores (_) sont autorisés</li>
-        <li>Cliquer sur <strong>Créer</strong></li>
+        <li>Le nom ne doit pas déjà exister</li>
+        <li>Seules les lettres (a-z, A-Z), chiffres (0-9), tirets (-) et underscores (_) sont autorisés</li>
+        <li>Cliquez sur <strong>Créer</strong></li>
     </ol>
 
     <div class="info-box">
@@ -170,7 +171,7 @@
 
     <ul>
         <li>Mode Auto : recherche automatique de l’hôte</li>
-        <li>Mode Ip : saisie de l’adresse IP de l’hôte</li>
+        <li>Mode IP : saisie de l’adresse IP de l’hôte</li>
     </ul>
 
     <p>
@@ -271,12 +272,12 @@
     </p>
     
     <p>
-        Desennemis patrouillent et réagissent à votre présence. Ils vous attaquent lorsque vous entrez
+        Des ennemis patrouillent et réagissent à votre présence. Ils vous attaquent lorsque vous entrez
 dans leur champ de vision ou leur zone de détection.
     </p>
 
     <p>
-        En mode multijoueur, certaines salles nécéssitent que tous les joueurs soient présent dans la
+        En mode multijoueur, certaines salles nécessitent que tous les joueurs soient présents dans la
 même salle pour progresser vers la salle suivante.
     </p>
         
@@ -288,7 +289,7 @@ le retour vers le lobby.
     <h3>Le lobby</h3>
 
     <p>
-        Le marchand, indiqué par le message Appuie sur E pour parler lorsque vous en êtes proche.
+        Le marchand est indiqué par le message « Appuie sur E pour parler » lorsque vous êtes à proximité.
     </p>
 
     <p>
@@ -322,7 +323,7 @@ le retour vers le lobby.
     <h2>Marchand et arbre de compétences</h2>
 
     <p>
-        approchez-vous du personnage du marchand et appuyez sur E d’amélioration des compétences
+        Approchez-vous du marchand et appuyez sur la touche indiquée (E par défaut) pour ouvrir le menu d’amélioration des compétences.
     </p>
 
     <h3>Branches disponibles</h3>
@@ -348,7 +349,7 @@ le retour vers le lobby.
     </p>
 
     <p>
-        Appuyez sur Échap pourfermerle menu et sauvegarder les améliorations achetées.
+        Appuyez sur Échap pour fermer le menu et sauvegarder les améliorations achetées.
     </p>
 
 </section>
@@ -369,7 +370,7 @@ le retour vers le lobby.
     </ul>
 
     <p>
-        Appuyez à nouveau sur Échap pourreprendre la partie sans cliquer sur un bouton.
+        Appuyez à nouveau sur Échap pour reprendre la partie sans cliquer sur un bouton.
     </p>
 
 </section>
@@ -386,7 +387,7 @@ le retour vers le lobby.
         <li>Les actions configurables sont listées avec la touche actuellement associée à chacune</li>
         <li>Cliquez sur l’action que vous souhaitez modifier. Le texte passe à Appuyez sur une touche</li>
         <li>Appuyez sur la nouvelle touche souhaitée pour l’associer à cette action</li>
-        <li>Cliquez sur Sauvegarder pourenregistrer les modifications, ou sur Retour pour les annuler</li>
+        <li>Cliquez sur Sauvegarder pour enregistrer les modifications, ou sur Retour pour les annuler</li>
     </ul>
 
     <div class="info-box">
@@ -401,7 +402,7 @@ le retour vers le lobby.
     <h2>Sauvegarde et progression</h2>
 
     <p>
-        Le jeu sauvegarde automatiquement la progression à la fin de chaque niveau.  (retour dans le lobby).
+        Le jeu sauvegarde automatiquement la progression à la fin de chaque niveau. (retour dans le lobby).
     </p>
 
     <p>
@@ -424,14 +425,14 @@ le retour vers le lobby.
 
 <section id="multijoueur-resume">
 
-    <h2>Mode multijoueur Résumé</h2>
+    <h2>Résumé du mode multijoueur</h2>
 
     <p>
         Hôte (serveur) : Lancer Relicfall, Jouer, Créer ou Charger un monde. Le jeu démarre et attend les connexions des autres joueurs.
     </p>
 
     <p>
-        Client (joueur) : Lancer Relicfall, Jouer, Rejoindre . Le jeu détecte automatiquement la session sur le réseau local et vous connecte. Sinon vous avez la possibilité de rentrer l’ip de l’hôte.
+        Client (joueur) : Lancer Relicfall, Jouer, Rejoindre . Le jeu détecte automatiquement la session sur le réseau local et vous connecte. Sinon, vous avez la possibilité de rentrer l’IP de l’hôte.
     </p>
 
 </section>
@@ -465,5 +466,7 @@ le retour vers le lobby.
     <p>© 2026 Relicfall</p>
 </footer>
 
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relicfall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>
+        <img src="logo.jpg" alt="logo">
+        RELICFALL
+    </h1>
+    <nav>
+        <a href="#presentation">Overview</a>
+        <a href="#images">Images</a> 
+        <a href="#download">Download</a>
+        <div class="dropdown">
+
+            <a href="#">
+                Documentation ▼
+            </a>
+
+            <div class="dropdown-content">
+
+                <a href="#" onclick="goToPage('manuel')">User Manual</a>
+                <a href="#" onclick="goToPage('installation')">Installation Procedure</a>
+
+            </div>
+
+        </div>
+        
+        <div class="language-switch">
+            <span onclick="toggleLanguage()" title="Passer en français">
+                🇫🇷
+            </span>
+        </div>
+    </nav>
+
+</header>
+
+<section class="hero">
+    <h2>Discover our game</h2>
+    <p>An incredible game awaits you</p>
+    <a href="#" class="download-btn" onclick="downloadLatest()">
+        Download the game
+    </a>
+
+    <p class="compatibility">
+        ✔ Compatible with Windows 10 and 11 • 64-bit
+    </p>
+</section>
+
+<section id="presentation">
+    <h2>Overview</h2>
+    <p>
+        Our story takes place in a distant village, known for the peace, joy, and unity that prevailed there. This village was once protected by powerful relics capable of repelling any monster attack.
+        Alas, one day, it suffered the worst fate: the disappearance of the relics. This led to the fall of the village, which was later overwhelmed by relentless attacks from creatures, brutally ending an era of peace.
+
+        <br><br>
+
+        Soon after, traces of the missing relics were discovered in a mysterious dungeon that had recently appeared. Many adventurers rushed into it, hoping to conquer it and recover the lost relics, but none of them ever returned victorious.
+
+        <br><br>
+
+        Until your arrival in this faraway land.
+    </p>
+</section>
+
+<section id="project">
+
+    <h2>Project presentation</h2>
+
+    <p>
+        Relicfall is a 2D top-down action-adventure game inspired by dungeon crawler and exploration games such as Zelda. 
+        Developed in Python using the PyGame library, the project was designed as a complete cooperative experience combining 
+        exploration, combat, progression systems, puzzles, and multiplayer gameplay within a dark fantasy universe. 
+        From the beginning of the project, the goal was not only to create a technically functional game, but also to build 
+        a coherent and immersive world capable of offering players a structured and evolving adventure. 
+        The game takes place across several interconnected dungeons filled with monsters, interactive mechanics, puzzles, 
+        merchants, and relics to recover in order to restore balance to the world.
+    </p>
+
+    <p>
+        Throughout the development process, the team progressively transformed the project from an initial technical prototype 
+        into a more complete and polished experience. The first stages focused mainly on the core foundations of the game, 
+        including player movement, dungeon loading systems, collisions, room transitions, menus, and the overall architecture 
+        of the engine. Once these technical bases became stable, the project expanded with additional gameplay systems such as 
+        enemy artificial intelligence, combat mechanics, progression systems, skill upgrades, lighting effects, merchants, 
+        multiplayer synchronization, and more advanced level design. Great attention was also given to atmosphere and immersion 
+        through pixel-art visuals, environmental design, sound integration, user interfaces, and progression pacing. 
+        Each dungeon was designed with its own mechanics, visual identity, and gameplay structure in order to create a varied 
+        and progressively more complex experience for the player.
+    </p>
+
+    <p>
+        Relicfall was also an important collaborative and educational experience for the entire team. 
+        Beyond the technical aspects of programming, the project required continuous organization, communication, adaptation, 
+        and teamwork in order to manage a large-scale development process alongside other academic constraints. 
+        The development involved many different fields including gameplay programming, artificial intelligence, level design, 
+        multiplayer networking, interface design, visual asset creation, sound research, and project presentation through a dedicated website. 
+        Despite time limitations and several ambitious features that could not be fully completed, the team successfully delivered 
+        a coherent and fully playable game representing the original vision of the project. 
+        Relicfall therefore stands both as a functional video game project and as a concrete demonstration of the group's ability 
+        to collaboratively design, organize, and develop a complex software project from conception to final presentation.
+    </p>
+
+</section>
+
+<section id="images">
+    <h2>Game images</h2>
+
+    <div class="gallery-container">
+
+        <button class="scroll-btn left" onclick="scrollGallery(-1)">
+            ◀
+        </button>
+
+        <div class="gallery" id="gallery">
+
+            <img src="image1.png" alt="image du jeu">
+            <img src="image2.png" alt="image du jeu">
+            <img src="image3.png" alt="image du jeu">
+
+        </div>
+
+        <button class="scroll-btn right" onclick="scrollGallery(1)">
+            ▶
+        </button>
+
+    </div>
+
+</section>
+
+<section id="team">
+
+    <h2>Project team</h2>
+
+    <p>
+        Relicfall was developed by a team of five students as part of the EPITA curriculum.
+        Each member contributed to the project through specific areas such as gameplay,
+        multiplayer systems, level design, user interfaces, visual assets, and sound design.
+    </p>
+
+    <div class="team-container">
+
+        <div class="team-member">
+
+            <h3>Eliott Averty</h3>
+
+            <p>
+                Development of the game's technical architecture, dungeon engine,
+                LAN multiplayer system, save management, skills system,
+                lighting effects, and a significant part of the user interface.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Rémi Jussac</h3>
+
+            <p>
+                Development of the core gameplay systems: player mechanics,
+                combat, animations, collisions, enemies, artificial intelligence,
+                progression systems, merchant interactions, and website development.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Augustin Sourisseau</h3>
+
+            <p>
+                Design of levels, lobbies, and progression mechanics,
+                creation of visual assets, player sprites, environment props,
+                and overall game environment structure.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Alexis Chapier</h3>
+
+            <p>
+                Creation of menus, control configuration systems,
+                research and integration of music and sound effects,
+                as well as several player-related graphical assets.
+            </p>
+
+        </div>
+
+        <div class="team-member">
+
+            <h3>Odile-Anaelle Metsotsanga</h3>
+
+            <p>
+                Research and conceptual work related to the game's monsters,
+                contribution to the creation of the bestiary,
+                and consistency of the Relicfall universe.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="resources">
+
+    <h2>Resources used</h2>
+
+    <ul class="resources-list">
+
+        <li>
+            <a href="https://www.python.org/" target="_blank">
+                Python
+            </a>
+            — Main programming language used for the project.
+        </li>
+
+        <li>
+            <a href="https://www.pygame.org/" target="_blank">
+                Pygame
+            </a>
+            — Library used for the game engine, rendering, and interactions.
+        </li>
+
+        <li>
+            <a href="https://github.com/" target="_blank">
+                GitHub
+            </a>
+            — Version control, collaboration, and website hosting.
+        </li>
+
+        <li>
+            <a href="https://code.visualstudio.com/" target="_blank">
+                Visual Studio Code
+            </a>
+            — Development environment used during the project.
+        </li>
+
+        <li>
+            <a href="https://www.aseprite.org/" target="_blank">
+                Aseprite
+            </a>
+            — Creation and editing of pixel-art sprites and assets.
+        </li>
+
+        <li>
+            <a href="https://freesound.org/" target="_blank">
+                Freesound
+            </a>
+            — Audio ambience and sound effect resources.
+        </li>
+
+        <li>
+            <a href="https://opengameart.org/" target="_blank">
+                OpenGameArt
+            </a>
+            — Visual assets and artistic inspirations.
+        </li>
+
+        <li>
+            <a href="https://fonts.google.com/specimen/Pixelify+Sans" target="_blank">
+                Pixelify Sans
+            </a>
+            — Font used for the website interface.
+        </li>
+
+    </ul>
+
+</section>
+
+<section id="reports">
+
+    <h2>Project report</h2>
+
+    <div class="pdf-download">
+
+        <p>
+            Download the complete project and presentation report.
+        </p>
+
+        <a class="download-btn"
+           href="rapport-projet.pdf"
+           download>
+
+            Download the PDF report (French version only)
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Relicfall</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>User manual - Relicfall</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <img src="logo.jpg" alt="Logo Relicfall">
+        RELICFALL
+    </h1>
+
+    <nav>
+        <a href="#" onclick="goToHome()">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Sections ▼</a>
+
+            <div class="dropdown-content">
+                <a href="#presentation">Overview</a>
+                <a href="#premier-lancement">First launch</a>
+                <a href="#menu-principal">Main menu</a>
+                <a href="#menu-jouer">Play menu</a>
+                <a href="#multijoueur">Multiplayer</a>
+                <a href="#commandes">Controls</a>
+                <a href="#progression">Game flow</a>
+                <a href="#competences">Skills</a>
+                <a href="#pause">Pause menu</a>
+                <a href="#options-configuration">Options</a>
+                <a href="#sauvegarde">Save</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
+<section id="presentation">
+
+    <h2>User manual</h2>
+
+    <p>
+        Relicfall is a top-down action-adventure game developed with Python and Pygame.
+        The player takes on the role of an adventurer tasked with recovering lost relics in dungeons
+        filled with monsters in order to restore balance to the world.
+    </p>
+
+    <p>
+        The game offers both a solo experience and a cooperative multiplayer mode on a local network (LAN).
+    </p>
+
+    <h3>Key points of the game</h3>
+
+    <ul>
+        <li>Three dungeon levels with rooms and monsters to defeat</li>
+        <li>A lobby between each level that lets you improve your skills</li>
+        <li>A merchant in the lobby who sells upgrades</li>
+        <li>Three skill branches: Attack, Healing, and Movement</li>
+        <li>Co-op multiplayer mode for up to 4 players on a local network</li>
+    </ul>
+
+</section>
+
+<section id="premier-lancement">
+
+    <h2>First launch</h2>
+
+    <p>
+        Double-click the Relicfall icon on your desktop or search for it in the Start Menu.
+    </p>
+
+    <p>
+        The game starts in a fixed window with a resolution of 1280 × 720.
+    </p>
+
+    <div class="info-box">
+        <strong>Note:</strong> the game cannot be switched to fullscreen from the interface.
+        Avoid manually resizing the window.
+    </div>
+
+</section>
+
+<section id="menu-principal">
+
+    <h2>Main menu</h2>
+
+    <p>
+        The main menu contains four buttons:
+    </p>
+
+    <ul>
+        <li><strong>Play</strong>: go to the game selection menu</li>
+        <li><strong>Options</strong>: open the control configuration menu</li>
+        <li><strong>Credits</strong>: display the game credits</li>
+        <li><strong>Quit</strong>: close the game</li>
+    </ul>
+
+</section>
+
+<section id="menu-jouer">
+
+    <h2>Play menu</h2>
+
+    <p>
+        After clicking Play, three options are available:
+    </p>
+
+    <ul>
+        <li><strong>Create a world</strong>: start a new game</li>
+        <li><strong>Load a world</strong>: continue from a save</li>
+        <li><strong>Join a game</strong>: join another player on the local network</li>
+    </ul>
+
+    <h3>Create a world</h3>
+
+    <ol>
+        <li>Enter the name of your world in the central text field</li>
+        <li>The name must contain between 1 and 13 characters</li>
+        <li>The name must not already exist</li>
+        <li>Only letters (a-z, A-Z), numbers (0-9), hyphens (-), and underscores (_) are allowed</li>
+        <li>Click <strong>Create</strong></li>
+    </ol>
+
+    <div class="info-box">
+        You can keep up to 4 saved worlds at the same time.
+    </div>
+
+    <h3>Load a world</h3>
+
+    <p>
+        Select a save from the list and click Load.
+    </p>
+
+    <p>
+        A save can be deleted via the trash icon.
+    </p>
+
+    <div class="warning-box">
+        Deleting a save is permanent.
+    </div>
+
+</section>
+
+<section id="multijoueur">
+
+    <h2>Multiplayer mode</h2>
+
+    <p>
+        Multiplayer mode works on a local network (LAN or shared Wi-Fi).
+    </p>
+
+    <h3>Create a game</h3>
+
+    <p>
+        The host must create or load a world before other players can join.
+    </p>
+
+    <h3>Join a game</h3>
+
+    <ul>
+        <li>Auto mode: automatic host search</li>
+        <li>IP mode: enter the host’s IP address</li>
+    </ul>
+
+    <p>
+        If Auto mode does not work, open a command prompt with
+        <strong>Win + R</strong>, type <strong>cmd</strong>, and enter:
+    </p>
+
+    <div class="code-box">
+        ipconfig
+    </div>
+
+    <p>
+        Then look for your IPv4 address.
+    </p>
+
+    <div class="info-box">
+        All players must be connected to the same local network.
+    </div>
+
+</section>
+
+<section id="commandes">
+
+    <h2>Game controls</h2>
+
+    <p>
+        The default controls are as follows. They can be changed in the Options menu.
+    </p>
+
+    <table class="controls-table">
+
+        <tr>
+            <th>Key</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>Z</td>
+            <td>Move up</td>
+        </tr>
+
+        <tr>
+            <td>S</td>
+            <td>Move down</td>
+        </tr>
+
+        <tr>
+            <td>Q</td>
+            <td>Move left</td>
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td>Move right</td>
+        </tr>
+
+        <tr>
+            <td>Space</td>
+            <td>Attack</td>
+        </tr>
+
+        <tr>
+            <td>E</td>
+            <td>Interact</td>
+        </tr>
+
+        <tr>
+            <td>Esc</td>
+            <td>Pause menu</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<section id="progression">
+
+    <h2>Game flow</h2>
+
+    <p>
+        A Relicfall game consists of three levels connected by lobbies.
+    </p>
+
+    <ul>
+        <li>Level 1: first dungeon. Objective: enter the dungeon and reach the lobby to access the other rooms</li>
+        <li>Lobby 1: rest area after level 1. The merchant is there</li>
+        <li>Level 2: second dungeon, accessible from the lobby. You must recover the first relic</li>
+        <li>Lobby 2: rest area after level 2. The merchant is there</li>
+        <li>Level 3: third and final dungeon. You must recover the last relic</li>
+        <li>Lobby 3: end of the game</li>
+    </ul>
+
+    <h3>Exploring a level</h3>
+
+    <p>
+        The level is made of rooms connected by doors. Doors open by
+        eliminating all enemies in the room or by activating levers / buttons.
+    </p>
+    
+    <p>
+        Enemies patrol and react to your presence. They attack when you enter
+        their line of sight or detection zone.
+    </p>
+
+    <p>
+        In multiplayer mode, some rooms require all players to be in the
+        same room before progressing to the next one.
+    </p>
+        
+    <p>
+        At the end of a level, a relic awaits you. Interact with it to retrieve it and trigger
+        the return to the lobby.
+    </p>
+
+    <h3>The lobby</h3>
+
+    <p>
+        The merchant is indicated by the message Press E to talk when you are close.
+    </p>
+
+    <p>
+        Doors that lead to the next level unlock as you progress.
+    </p>
+
+    <div class="info-box">
+        When you first arrive in the lobby, the merchant automatically speaks to you.
+        Press Enter to advance the dialogue, or wait for it to scroll automatically.
+    </div>
+
+    <h3>Combat</h3>
+
+    <p>
+        Press Space to attack in the direction of the mouse.
+    </p>
+
+    <p>
+        Your health points are shown at the top of the screen. If your health reaches zero, you
+        lose and return to the previous lobby.
+    </p>
+
+    <p>
+        In multiplayer mode, a player’s death sends you back to the previous lobby.
+    </p>
+
+</section>
+
+<section id="competences">
+
+    <h2>Merchant and skill tree</h2>
+
+    <p>
+        Approach the merchant character and press the indicated key (E by default) to improve your skills.
+    </p>
+
+    <h3>Available branches</h3>
+
+    <ul>
+        <li><strong>ATTACK</strong> in red: +10% damage per level (5 levels max)</li>
+        <li><strong>HEAL</strong> in green: +10% max health per level (5 levels max)</li>
+        <li><strong>MOVEMENT</strong> in blue: +10% movement speed per level (5 levels max)</li>
+    </ul>
+
+    <p>
+        Each skill level has a point cost displayed under the corresponding button. The
+        cost increases with each unlocked level (cost = 2<sup>1+current level</sup>).
+    </p>
+
+    <p>
+        Click the button for the next level to unlock it (the button after your
+        current level is the only one active).
+    </p>
+
+    <p>
+        If you do not have enough points, the button is not clickable.
+    </p>
+
+    <p>
+        Press Esc to close the menu and save the purchased upgrades.
+    </p>
+
+</section>
+
+<section id="pause">
+
+    <h2>Pause menu</h2>
+
+    <p>
+        During a game, press Esc to open the pause menu. Four options are available:
+    </p>
+
+    <ul>
+        <li>Resume</li>
+        <li>Options</li>
+        <li>Main menu</li>
+        <li>Quit</li>
+    </ul>
+
+    <p>
+        Press Esc again to resume the game without clicking a button.
+    </p>
+
+</section>
+
+<section id="options-configuration">
+
+    <h2>Options and key configuration</h2>
+
+    <p>
+        The Options menu is accessible from the main menu or the Pause menu.
+    </p>
+
+    <ul>
+        <li>Configurable actions are listed with the key currently assigned to each one</li>
+        <li>Click the action you want to change. The text becomes Press a key</li>
+        <li>Press the new key you want to assign to this action</li>
+        <li>Click Save to save the changes, or Return to cancel them</li>
+    </ul>
+
+    <div class="info-box">
+        If your controls are misconfigured and you can no longer navigate the menus, you can manually delete the settings.json configuration file located in
+        %APPDATA%\Relicfall. The default keys will be restored on the next launch.
+    </div>
+
+</section>
+
+<section id="sauvegarde">
+
+    <h2>Save and progress</h2>
+
+    <p>
+        The game automatically saves progress at the end of each level. (return to the lobby).
+    </p>
+
+    <p>
+        Saves are stored in:
+    </p>
+
+    <div class="code-box">
+        %APPDATA%\Relicfall\worlds\&lt;world_name&gt;
+    </div>
+
+    <div class="info-box">
+        You can keep up to 4 saved worlds at the same time.
+    </div>
+
+    <div class="warning-box">
+         There is no manual save option; if you quit in the middle of a level, you will resume at the entrance of that level on the next load.
+    </div>
+
+</section>
+
+<section id="multijoueur-resume">
+
+    <h2>Multiplayer summary</h2>
+
+    <p>
+        Host (server): launch Relicfall, go to Play, create or load a world. The game starts and waits for other players to connect.
+    </p>
+
+    <p>
+        Client (player): launch Relicfall, go to Play, and join. The game automatically detects the session on the local network and connects you. Otherwise, you can enter the host’s IP address.
+    </p>
+
+</section>
+
+<section id="pdf-manual">
+
+    <div class="pdf-download">
+
+        <h2>Download the PDF manual</h2>
+
+        <p>
+            You can also download the full user manual in PDF format.
+        </p>
+
+        <a
+            class="download-btn"
+            href="Manuel d'utilisation.pdf"
+            download>
+
+            Download the PDF (French version only)
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Relicfall</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

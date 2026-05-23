@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding-top: 120px;
 }
 
 #presentation p {
@@ -29,12 +30,25 @@ body {
 
 header {
     background: rgba(31, 31, 31, 0.98);
+
     height: 120px;
+
     padding: 0 15px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    transition: transform 0.6s ease;
 }
 
 header h1 {
@@ -343,4 +357,76 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    top: -2px;
+}
+
+.language-switch span {
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+
+    user-select: none;
+}
+
+.language-switch span:hover {
+
+    transform: scale(1.15);
+}
+
+.team-container {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.team-member {
+
+    background: rgba(255,255,255,0.05);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    width: 300px;
+}
+
+.resources-list li {
+
+    margin-bottom: 10px;
+}
+
+.resources-list a {
+
+    color: #00c853;
+
+    text-decoration: none;
+}
+
+.resources-list a:hover {
+
+    text-decoration: underline;
+}
+
+#project p {
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+    text-align: justify;
 }
