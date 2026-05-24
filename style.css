@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -435,3 +439,126 @@ footer {
     text-align: justify;
 }
 
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+        padding: 10px 15px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header h1 {
+        margin-left: 0;
+        font-size: 32px;
+    }
+
+    header h1 img {
+        height: 80px;
+    }
+
+    nav {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .dropdown {
+        position: static;
+    }
+
+    .dropdown-content {
+        left: 5vw;
+        right: 5vw;
+        transform: none;
+
+        width: 90vw;
+        min-width: 0;
+        max-width: 90vw;
+
+        text-align: center;
+    }
+
+    .dropdown-content a {
+        text-align: center;
+        white-space: normal;
+    }
+
+    .language-switch {
+        margin-left: 0;
+    }
+
+    section {
+        margin: 12px;
+        padding: 22px;
+    }
+
+    #presentation p,
+    #project p {
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    #installation p,
+    #lancement p,
+    #desinstallation p,
+    #installation li,
+    #lancement li,
+    #desinstallation li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .tutorial-step {
+        padding: 18px;
+    }
+
+    .tutorial-step img {
+        width: 100%;
+    }
+
+    .small-image {
+        width: 80% !important;
+    }
+
+    .gallery img {
+        min-width: 85%;
+        height: 220px;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+}
+
+section {
+    scroll-margin-top: 140px;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        padding-top: 250px;
+    }
+
+    section {
+        scroll-margin-top: 250px;
+    }
+}
