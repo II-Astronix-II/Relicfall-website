@@ -15,9 +15,44 @@
         RELICFALL
     </h1>
     <nav>
-        <a href="#presentation">Overview</a>
-        <a href="#images">Images</a> 
-        <a href="#download">Download</a>
+
+        <div class="dropdown">
+
+            <a href="#">
+                Overview ▼
+            </a>
+
+            <div class="dropdown-content">
+
+                <a href="#presentation">Overview</a>
+                <a href="#project">Project</a>
+                <a href="#images">Screenshots</a>
+                <a href="#team">Team</a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="dropdown">
+
+            <a href="#">
+                Downloads ▼
+            </a>
+
+            <div class="dropdown-content">
+
+                <a href="#download">Download</a>
+                <a href="#resources">Resources</a>
+                <a href="#reports">Report</a>
+
+            </div>
+
+        </div>
+
+
+
         <div class="dropdown">
 
             <a href="#">
@@ -26,18 +61,31 @@
 
             <div class="dropdown-content">
 
-                <a href="#" onclick="goToPage('manuel')">User Manual</a>
-                <a href="#" onclick="goToPage('installation')">Installation Procedure</a>
+                <a href="#" onclick="goToPage('manuel')">
+                    User manual
+                </a>
+
+                <a href="#" onclick="goToPage('installation')">
+                    Installation guide
+                </a>
 
             </div>
 
         </div>
-        
+
+
+
         <div class="language-switch">
-            <span onclick="toggleLanguage()" title="Passer en français">
+
+            <span onclick="toggleLanguage()"
+                title="Passer en français">
+
                 🇫🇷
+
             </span>
+
         </div>
+
     </nav>
 
 </header>

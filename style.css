@@ -320,6 +320,10 @@ footer {
     position: relative;
 }
 
+.dropdown > a {
+    white-space: nowrap;
+}
+
 .dropdown-content {
 
     display: none;
