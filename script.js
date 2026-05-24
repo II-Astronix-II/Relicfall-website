@@ -90,3 +90,23 @@ function toggleLanguage() {
         }
     }
 }
+
+function openImage(src) {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+
+    if (!modal || !modalImage) return;
+
+    modalImage.src = src;
+    modal.style.display = "flex";
+}
+
+function closeImage() {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+
+    if (!modal || !modalImage) return;
+
+    modal.style.display = "none";
+    modalImage.src = "";
+}
