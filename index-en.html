@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RelicFall</title>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://astronix.goatcounter.com/count"
+            async src="https://gc.zgo.at/count.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -94,8 +96,13 @@
 <section class="hero">
     <h2>Discover our game</h2>
     <p>An incredible game awaits you</p>
-    <a href="#" class="download-btn" onclick="downloadLatest()">
+    <a href="#"
+        class="download-btn"
+        onclick="downloadLatest()"
+        data-goatcounter-click="download-latest-game">
+
         Download the game
+
     </a>
 
     <p class="compatibility">
@@ -274,6 +281,25 @@
 
 </section>
 
+<section id="download">
+    <h2>Download</h2>
+    <p>Choose a version:</p>
+
+    <select id="version-select">
+        <option value="RelicfallSetup.exe">Version 1.0</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="downloadGame()"
+            data-goatcounter-click="download-selected-version">
+
+        Download
+
+    </button>
+
+</section>
+
 <section id="resources">
 
     <h2>Resources used</h2>
@@ -351,8 +377,9 @@
         </p>
 
         <a class="download-btn"
-           href="rapport-projet.pdf"
-           download>
+            href="rapport-projet.pdf"
+            download
+            data-goatcounter-click="download-project-report">
 
             Download the PDF report (French version only)
 
